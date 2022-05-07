@@ -1,5 +1,5 @@
 # movie_rating
-django application for movie ratings and swagger integration
+django application for movie ratings with unittest case and swagger integration
 
 # initial setup
 - clone the repo
