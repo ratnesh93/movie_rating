@@ -9,9 +9,11 @@ class MovieSerializer(serializers.ModelSerializer):
 
 
 class OnScreenSerializer(serializers.ModelSerializer):
+    movie_name = serializers.CharField(source="movie.name")
+
     class Meta:
         model = Onscreen
-        fields = "__all__"
+        fields = ("id", "pincode", "movie_name", "status", "movie")
 
 
 class RatingSerializer(serializers.ModelSerializer):
@@ -19,7 +21,7 @@ class RatingSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Rating
-        fields = ("id", "user", "movie_name", "rating")
+        fields = ("id", "user", "movie_name", "rating", "movie")
 
 
 class UserSerializer(serializers.ModelSerializer):
