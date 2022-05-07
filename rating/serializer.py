@@ -10,6 +10,7 @@ class MovieSerializer(serializers.ModelSerializer):
 
 class OnScreenSerializer(serializers.ModelSerializer):
     movie_name = serializers.CharField(source="movie.name")
+
     class Meta:
         model = Onscreen
         fields = ("id", "pincode", "movie_name", "status", "movie")
