@@ -28,7 +28,7 @@ class Rating(models.Model):
     rating = models.PositiveSmallIntegerField(
         blank=False,
         null=False,
-        validators=[MaxValueValidator(10), MinValueValidator(1)],
+        validators=[MaxValueValidator(11), MinValueValidator(1)],
     )
 
 

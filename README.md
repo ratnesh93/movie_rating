@@ -38,3 +38,5 @@ API integration for fetching pincodes.
 API to search for list of active movies in a pincode.
 - GET http://127.0.0.1:8000/rating/active_movies/110001
 
+# UNIT TEST CASE
+- to run them: ```python manage.py test tests```
