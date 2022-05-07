@@ -6,13 +6,17 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('rating', '0001_initial'),
+        ("rating", "0001_initial"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='onscreen',
-            name='status',
-            field=models.CharField(choices=[('active', 'Active'), ('inactive', 'Inactive')], default='active', max_length=32),
+            model_name="onscreen",
+            name="status",
+            field=models.CharField(
+                choices=[("active", "Active"), ("inactive", "Inactive")],
+                default="active",
+                max_length=32,
+            ),
         ),
     ]
